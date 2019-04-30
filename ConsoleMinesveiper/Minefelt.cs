@@ -307,6 +307,8 @@ namespace ConsoleMinesveiper
                         sb.Append("# ");
                     else if (felt.Mine)
                         sb.Append("X ");
+                    else if (felt.AntallNæreMiner == 0)
+                        sb.Append("  ");
                     else
                         sb.Append(felt.AntallNæreMiner + " ");
                 }
